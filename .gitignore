@@ -1,17 +1,17 @@
-# Ignore Mac system files
+# Ignore Mac system files:
 .DS_store
 
-# Ignore node_modules folder
+# Ignore node_modules folder:
 node_modules
 
-# Ignore all text files
+# Ignore all text files:
 *.txt
 
-# Ignore files related to API keys
+# Ignore files related to API keys:
 .env
 
-# Ignore SASS config files
+# Ignore SASS config files:
 .sass-cache
 
-# Ignore vscode files
+# Ignore vscode files:
 .vscode
