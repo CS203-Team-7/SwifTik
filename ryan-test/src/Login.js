@@ -32,7 +32,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h1>SwifTik</h1>
+      <h1>Login</h1>
       {error && <p className="error-message">{error}</p>}
       <form>
         <div className="form-group">
