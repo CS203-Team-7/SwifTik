@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
@@ -13,13 +14,22 @@ const Login = () => {
   };
 
   const handleLogin = () => {
-    // You can implement your login logic here
-    console.log(`Username: ${username}, Password: ${password}`);
+    // Simulate authentication (replace with your actual authentication logic)
+    const validUsername = 'user123';
+    const validPassword = 'password123';
+
+    if (username === validUsername && password === validPassword) {
+      setError('');
+      alert('Login successful'); // You can redirect the user or perform other actions here
+    } else {
+      setError('Invalid username or password');
+    }
   };
 
   return (
     <div className="login-container">
-      <h1>SwifTik</h1>
+      <h1>Login</h1>
+      {error && <p className="error-message">{error}</p>}
       <form>
         <div className="form-group">
           <label>Username</label>
