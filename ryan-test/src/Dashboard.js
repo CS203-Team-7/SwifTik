@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
     const navigate = useNavigate();
     const handleLogOut = () => {
-        localStorage.setItem("authenticated", false);
+        localStorage.removeItem('authToken');
+        alert('Successfully logged out');
         navigate("/login");
     }
     const [authenticated, setauthenticated] = useState(null);
@@ -22,7 +23,7 @@ const Dashboard = () => {
         return (
             <div>
                 <p>Welcome to your Dashboard</p>
-                <img src="https://gifdb.com/images/high/default-dance-gif-file-1273kb-rlovu8944rmxtcdh.gif" />
+                <img src="https://media.tenor.com/MXpTxtjJQN0AAAAC/breakdance-cat-electronic-jazz.gif" />
                 <div>
                     <button type="button" onClick={handleLogOut}> Log Out</button>
                 </div>
