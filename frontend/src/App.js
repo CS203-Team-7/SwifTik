@@ -9,19 +9,17 @@ import {Routes, Route} from 'react-router-dom';
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
 
-  const toggleForm = (formName) => {
-    setCurrentForm(formName);
-  }
+  // const toggleForm = (formName) => {
+  //   setCurrentForm(formName);
+  // }
 
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="dashboard" element={<Dashboard />} />
+        <Route path="register" element={<Register />} />
       </Routes>
-      {
-        currentForm === 'login' ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-      }
 
     </div>
   );

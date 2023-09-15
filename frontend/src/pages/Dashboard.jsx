@@ -6,7 +6,7 @@ const Dashboard = () => {
     const handleLogOut = () => {
         localStorage.removeItem('authToken');
         alert('Successfully logged out');
-        navigate("/login");
+        navigate("/");
     }
     const [authenticated, setauthenticated] = useState(null);
     useEffect(() => {
