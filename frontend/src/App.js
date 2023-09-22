@@ -5,6 +5,7 @@ import { Login } from './components/Login';
 import { Register } from './components/Register';
 import Dashboard from './pages/Dashboard';
 import {Routes, Route} from 'react-router-dom';
+import Home from './components/Home';
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="register" element={<Register />} />
+        <Route path="home" element={<Home />} />
       </Routes>
 
     </div>
