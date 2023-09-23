@@ -23,7 +23,7 @@ const Dashboard = () => {
         return (
             <div>
                 <p>Welcome to your Dashboard</p>
-                <img src="https://media.tenor.com/MXpTxtjJQN0AAAAC/breakdance-cat-electronic-jazz.gif" />
+                <img src="https://media.tenor.com/MXpTxtjJQN0AAAAC/breakdance-cat-electronic-jazz.gif" alt="Cat meme" />
                 <div>
                     <button type="button" onClick={handleLogOut}> Log Out</button>
                 </div>

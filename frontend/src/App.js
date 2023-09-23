@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
-// import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import { Login } from './components/Login';
 import { Register } from './components/Register';
 import Dashboard from './pages/Dashboard';
 import {Routes, Route} from 'react-router-dom';
-import Home from './components/Home';
+import Home from './pages/Home';
 
 function App() {
-  const [currentForm, setCurrentForm] = useState('login');
-
-  // const toggleForm = (formName) => {
-  //   setCurrentForm(formName);
-  // }
 
   return (
     <div className="App">

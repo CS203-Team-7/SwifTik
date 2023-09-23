@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Header";
-import Main from "./Main";
+import Header from "../components/Header";
+import Main from "../components/Main";
 // import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
