@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { register } from "../services/User";
-import { useAuth } from "../hooks/AuthContext";
 
 export const Register = () => {
     const navigate = useNavigate();
@@ -10,7 +9,6 @@ export const Register = () => {
     const [passwordConfirmation, setPasswordConfirmation] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [dateOfBirth, setDateOfBirth] = useState('');
-    const { isAuthenticated } = useAuth();
 
     const handleSubmit = (e) => {
         e.preventDefault();
