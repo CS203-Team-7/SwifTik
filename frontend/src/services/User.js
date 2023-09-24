@@ -21,7 +21,6 @@ export const login = async (email, password) => {
 }
 
 // Let's create the API call to register the user
-// Remember to store the token in the local storage when using the register API call
 export const register = async (email, password, dateOfBirth, phoneNumber) => {
     try {
         return await axios.post("http://localhost:8080/auth/signup", {
@@ -29,6 +28,20 @@ export const register = async (email, password, dateOfBirth, phoneNumber) => {
             password,
             dateOfBirth,
             phoneNumber
+        });
+    } catch (error) {
+        alert(error);
+        console.log(error.response.data);
+    }
+}
+
+
+// Let's create the API call to do the OTP verification
+export const verifyOTP = async (email, otpNumber) => {
+    try {
+        return await axios.post("http://localhost:8080/otp/validate", {
+            email,
+            otpNumber
         });
     } catch (error) {
         alert(error);

@@ -21,12 +21,8 @@ export const Register = () => {
         // Here we will call the register API endpoint and then store the token in local storage.
         register(email, password, dateOfBirth, phoneNumber)
             .then((res) => {
-                localStorage.setItem("token", res.headers["authorization"]);
-                if(isAuthenticated){
-                    navigate("/Home");
-                } else {
-                    navigate("/");
-                }
+                // After successful registration, we will navigate the user to the OTP page.
+                navigate("/otp");
             })
     }
     

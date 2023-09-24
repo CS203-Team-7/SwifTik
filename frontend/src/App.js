@@ -5,6 +5,7 @@ import { Register } from './components/Register';
 import Dashboard from './pages/Dashboard';
 import {Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
+import OtpPage from './components/Otp';
 
 function App() {
 
@@ -15,8 +16,8 @@ function App() {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="register" element={<Register />} />
         <Route path="home" element={<Home />} />
+        <Route path="/otp" element={<OtpPage/>} />
       </Routes>
-
     </div>
   );
 }

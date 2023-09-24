@@ -10,7 +10,8 @@ export const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         login(email, password).then((res) => {
-            localStorage.setItem("token", res.headers["authorization"])
+            // We now get the token from the response and store it in local storage.
+            localStorage.setItem("token", res.data.token);
             navigate("/Home");
         }).catch((error) => {
             alert(error);
