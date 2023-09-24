@@ -16,7 +16,7 @@ export const login = async (email, password) => {
             password
         });
         } catch (error) {
-            alert(error);
+            alert(error.response.data);
         }
 }
 
@@ -30,7 +30,7 @@ export const register = async (email, password, dateOfBirth, phoneNumber) => {
             phoneNumber
         });
     } catch (error) {
-        alert(error);
+        alert(error.response.data);
         console.log(error.response.data);
     }
 }
@@ -44,7 +44,7 @@ export const verifyOTP = async (email, otpNumber) => {
             otpNumber
         });
     } catch (error) {
-        alert(error);
+        alert(error.response.data);
         console.log(error.response.data);
     }
 }
