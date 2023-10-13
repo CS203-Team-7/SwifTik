@@ -56,7 +56,7 @@ const Raffles = () => {
                 <h3>Past Raffles</h3>
             </div>
             <div className="row">
-                <CurrentRaffles currentraffles={currentraffles} />
+                <PastRaffles pastraffles={pastraffles} />
             </div>
         
         </div>
