@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import {Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import OtpPage from './components/Otp';
+import Raffles from './pages/Raffles';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="register" element={<Register />} />
         <Route path="home" element={<Home />} />
         <Route path="/otp" element={<OtpPage/>} />
+        <Route path="raffles" element={<Raffles/>} />
       </Routes>
     </div>
   );
