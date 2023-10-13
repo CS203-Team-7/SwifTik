@@ -28,7 +28,7 @@ input {
 
 button {
   border: none;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -149,7 +149,20 @@ button {
 }
 
  /* Raffle*/
- .col2{
-  margin-left: 45px;
-  align-items: left;
+ .row.heading {
+  text-align: left; /* Align text to the left within this container */
+}
+
+ .row{
+  display: flex;
+  margin: -15pxpx;
  }
+
+ .raffles > .row{
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: flex-start;
+  margin: 1rem;
+  display: flex;
+ }
+
