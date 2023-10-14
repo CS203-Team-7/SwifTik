@@ -19,6 +19,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    # Since this is just for the backend we need to specify the working directory:
+    defaults:
+      run:
+        working-directory: ./backend/swiftyticketing
+
     # We also need to tell Actions to create a Postgres image for testing:
     services:
       postgres:
